@@ -1,8 +1,9 @@
+/* eslint-disable */
 import React from "react";
 
 type projectTagtype ={
     name: string;
-    onClick:()=>{};
+    onClick:unknown;
     isSelected:boolean
 }
 

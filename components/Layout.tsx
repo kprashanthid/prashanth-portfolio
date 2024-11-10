@@ -1,5 +1,4 @@
-import React, { ReactHTMLElement } from 'react';
-
+/* eslint-disable */
 export default function Layout({ children }:{children:string}) {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 text-gray-800">

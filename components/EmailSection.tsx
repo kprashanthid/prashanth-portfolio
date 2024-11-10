@@ -4,7 +4,7 @@ import Image from "next/image";
 import GithubIcon from "./../app/assets/github-icon.png";
 import LinkedinIcon from "./../app/assets/linkedin.png";
 
-const EmailSectionUI = ({ emailSubmitted, onSubmit }: { emailSubmitted: string, onSubmit: string }) => {
+const EmailSectionUI = ({ emailSubmitted }: { emailSubmitted: string }) => {
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
