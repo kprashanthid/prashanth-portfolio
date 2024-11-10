@@ -3,7 +3,7 @@ import React from "react";
 
 type projectTagtype ={
     name: string;
-    onClick:unknown;
+    onClick: (name: string) => void;
     isSelected:boolean
 }
 

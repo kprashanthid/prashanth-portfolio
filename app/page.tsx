@@ -15,7 +15,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection /> 
         <ProjectsSection />
-        <EmailSectionUI emailSubmitted={""} onSubmit={""}/>
+        <EmailSectionUI emailSubmitted={""}/>
       </div>
 
     </main>

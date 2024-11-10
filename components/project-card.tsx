@@ -3,9 +3,10 @@ import React from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import imo from "./../app/assets/zoro.png"
+import { StaticImageData } from "next/image";
 
 type Project = {
-    imgUrl: string;
+    imgUrl: StaticImageData;
     title: string;
     description: string;
     gitUrl: string;
