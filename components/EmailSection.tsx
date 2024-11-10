@@ -1,11 +1,20 @@
-"use client";
-import React from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+import Image from "next/image";
 import GithubIcon from "./../app/assets/github-icon.png";
 import LinkedinIcon from "./../app/assets/linkedin.png";
-import Link from "next/link";
-import Image from "next/image";
 
-const EmailSectionUI = ({ emailSubmitted, onSubmit }: {emailSubmitted:string , onSubmit :string}) => {
+const EmailSectionUI = ({ emailSubmitted, onSubmit }: { emailSubmitted: string, onSubmit: string }) => {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Only enable client-side behavior after mounting
+  }, []);
+
+  if (!isClient) {
+    return null; // Prevent rendering on the server side
+  }
+
   return (
     <section
       id="contact"

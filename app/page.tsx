@@ -1,6 +1,7 @@
+"use client"
 import { HeroSection } from "@/components/hero-section";
 import Navbar from "@/components/nav-bar";
-import Image from "next/image";
+
 import AboutSection from "@/components/about";
 import ProjectsSection from "@/components/project-section";
 import EmailSectionUI from "@/components/EmailSection";
@@ -14,7 +15,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection /> 
         <ProjectsSection />
-        <EmailSectionUI emailSubmitted={""} onSubmit={"mhdjshnf"}/>
+        <EmailSectionUI emailSubmitted={""} onSubmit={""}/>
       </div>
 
     </main>
