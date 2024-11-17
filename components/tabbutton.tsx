@@ -8,13 +8,14 @@ const variants = {
 };
 
 const TabButton = ({ active, selectTab, children }:{active:boolean ,selectTab:()=>{}, children:any}) => {
-  const buttonClasses = active ? "text-[#ADB7BE]" : "text-black";
+  const buttonClasses = active ? "font-bold" : "text-black";
 
   return (
     <button onClick={selectTab}>
-      <p className={`mr-3 font-semibold  ${buttonClasses}`}>
+      <p className={`font-semibold text-center ${buttonClasses}`}>
         {children}
       </p>
+     {active && <div className="bg-black h-[2px] "/>}
       <motion.div
         animate={active ? "active" : "default"}
         variants={variants}
