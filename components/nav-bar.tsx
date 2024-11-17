@@ -24,11 +24,11 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   return (
-    <nav className={`fixed mx-auto shadow-md top-0 left-0 right-0 z-10 bg-opacity-500 ${navbarOpen ? 'bg-black ' : null}`}>
+    <nav className={`fixed shadow-lg top-0 left-0 right-0 z-10 bg-black md:px-5  ${navbarOpen ? 'bg-black' : null}`}>
       <div className="flex container lg:py-4 flex-wrap items-center justify-between mx-auto px-4 py-2">
         <Link
           href={"/"}
-          className={`text-2xl md:text-5xl  font-semibold  ${navbarOpen ? 'text-white' : null}`}
+          className={`text-2xl md:text-5xl text-white  font-semibold  ${navbarOpen ? 'text-white' : null}`}
         >
           LOGO
         </Link>

@@ -5,21 +5,38 @@ import React, { useTransition, useState } from "react";
 import Image from "next/image";
 import TabButton from "./tabbutton";
 import code from "../app/assets/code.png"
+import Skills from "./skills";
+import { motion } from "framer-motion";
 
+const technologies = [
+  "Node Js",
+  "React Native",
+  "React",
+  "Tailwind Css",
+  "Express",
+  "Mongodb",
+  "Mui",
+  "Java",
+  "Springboot"
+];
 
 const TAB_DATA = [
   {
     title: "Skills",
     id: "skills",
     content: (
-      <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
-        <li>JavaScript</li>
-        <li>React</li>
-      </ul>
+<div className="">
+<motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-row gap-5 flex-wrap"
+        >
+        {technologies.map((title,key)=>{
+          return   <Skills className="w-full md:w-1/4 "  key={key} title={title}/>
+        })}
+  </motion.div>
+    </div>
     ),
   },
   {

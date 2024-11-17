@@ -27,9 +27,7 @@ export function HeroSection () {
                 "Frontend Dev",
                 1000,
                 "Mobile Developer",
-                1000,
-                "UI/UX Designer",
-                1000,
+                1000
               ]}
               wrapper="span"
               speed={50}
